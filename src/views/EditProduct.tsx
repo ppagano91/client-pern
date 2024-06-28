@@ -18,7 +18,7 @@ export async function action({request}: ActionFunctionArgs){
   return redirect("/")
 }
 
-const NewProduct = () => {
+const EditProduct = () => {
   const error = useActionData() as string;
 
 
@@ -26,7 +26,7 @@ const NewProduct = () => {
   return (
     <>
     <div className="flex justify-between">
-        <h2 className="text-4xl font-black text-slate-500">Registrar Producto</h2>
+        <h2 className="text-4xl font-black text-slate-500">Editar Producto</h2>
         <Link
           to="/"
           className="rounded-md bg-indigo-600 p-3 text-sm font-bold text-white shadow-sm hover:bg-indigo-500"
@@ -75,4 +75,4 @@ const NewProduct = () => {
   )
 }
 
-export default NewProduct
+export default EditProduct
